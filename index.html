@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои публикации и выплаты</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Мои публикации и выплаты</h1>
+  </header>
+
+  <main>
+    <!-- Общая статистика -->
+    <section id="stats">
+      <h2>Общая статистика</h2>
+      <p>Публикаций: <span id="total-publications">0</span></p>
+      <p>Общая выручка: $<span id="total-revenue">0</span></p>
+      <p>Средняя доля автора: $<span id="average-share">0</span></p>
+      <p>Продано экземпляров (печать/цифра): <span id="copies-sold">0</span></p>
+    </section>
+
+    <!-- Таблица публикаций -->
+    <section id="publications-list">
+      <h2>Список публикаций</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Журнал</th>
+            <th>Дата</th>
+            <th>Страницы</th>
+            <th>Продано печать/цифра</th>
+            <th>Доля автора</th>
+            <th>Доход (USD)</th>
+          </tr>
+        </thead>
+        <tbody id="publications-table">
+          <!-- JS вставит строки сюда -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
